@@ -1,0 +1,2 @@
+// funkcje to metoda 
+

@@ -111,3 +111,53 @@ else if (e > r )
 else {
     console.log('e nie jest ani większe ani mniejsze od r')
 }
+// skrocona wersja wyrażenie ? zwróć jeżeli wyrażenie true : zwróć jeżeli wyrażenie false
+
+let czyParzysta = (e % 2 === 0) ? true : false;
+console.log(`liczba ${e} jest liczbą parzystą ${czyParzysta}`)
+
+// switch
+
+let dzienTygodnia = 5;
+
+switch(dzienTygodnia){
+    case 1:
+        console.log('dziś jest poniedziałek')
+    break
+    case 2:
+            console.log('dziś jest wtorek')
+    break
+    case 3:
+        console.log('dziś jest środa')
+    break
+    case 4:
+        console.log('dziś jest czwartek')
+    break
+    case 5:
+        console.log('dziś jest piątek')
+    break
+    case 6:
+        console.log('dziś jest sobota')
+    break
+    case 7:
+        console.log('dziś jest niedziela')
+    break
+    default: 
+        console.log('nie ma takiego dnia tygodnia')
+}
+
+switch(dzienTygodnia){
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        console.log('dziś jest dzień pracujący')
+    break
+    case 6:
+    case 7:
+        console.log('dziś jest weekend')
+    break
+    default: 
+        console.log('nie ma takiego dnia tygodnia')
+}
