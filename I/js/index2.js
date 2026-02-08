@@ -53,20 +53,26 @@ let listaZakupow = document.getElementById("produkty").getElementsByTagName('li'
 //     alert(object[key])
 // }
 
-let argument = [3, 4, 7, 6, 9, 78]
-const addNumbers = () => {
-    let sum = 0
-    for (let index = 0; index < argument.length; index++) {
-        sum += argument[index]
-    }
-    return sum
-}
+// let argument = [3, 4, 7, 6, 9, 78]
+// const addNumbers = () => {
+//     let sum = 0
+//     for (let index = 0; index < argument.length; index++) {
+//         sum += argument[index]
+//     }
+//     return sum
+// }
 
-let sum = 0;
-for (const key in argument) {
-    sum += argument[key];
-}
+// let sum = 0;
+// for (const key in argument) {
+//     sum += argument[key];
+// }
 
-let suma = addNumbers(argument);
-console.log(suma)
-console.log(sum)
+// let suma = addNumbers(argument);
+// console.log(suma)
+// console.log(sum)
+
+let lista = document.getElementById("lista");
+lista.setAttribute('class', 'zmienKolor');  //ustawia atrybut
+lista.removeAttribute('class'); //usuwa atrybut
+
+console.log(lista.childNodes[1])
