@@ -170,4 +170,4 @@ console.log(posortowaneRosnąco)
 // slice - kroić od ... do ...
 // document.getElementById("rezultat").innerHTML = produkty.slice(1,3)
 // splice od którego elementu zacząć usuwać, a drugi ile elemntów ma usunąć, lepić
-document.getElementById("rezultat").innerHTML = produkty.splice(1,3, 'hmm', 'uuu', 'ooo')
+document.getElementById("rezultat").innerHTML = produkty.splice(1, 3, 'hmm', 'uuu', 'ooo')
