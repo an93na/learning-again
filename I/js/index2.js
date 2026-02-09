@@ -76,3 +76,27 @@ lista.setAttribute('class', 'zmienKolor');  //ustawia atrybut
 lista.removeAttribute('class'); //usuwa atrybut
 
 console.log(lista.childNodes[1])
+
+document.querySelector('p').setAttribute('class', 'color');
+
+let divs = document.querySelectorAll('div');
+divs.forEach(div => div.setAttribute('class', 'kolor'));
+
+let liSklepy = document.querySelectorAll('#sklepy li');
+// for (const index in liSklepy) {
+//     liSklepy[index].style.color= 'red';
+// }
+
+let liProdukty = document.querySelectorAll('#produkty li')
+for (let index = 0; index < liProdukty.length; index++) {
+    liProdukty[index].style.color = 'green'
+}
+let p = document.createElement('p');
+p.style.color = 'blue';
+p.className = "paragraf";
+p.innerHTML = 'tekst paragrafu';
+let body = document.querySelector('body');
+body.appendChild(p) //dołącza nowe dziecko na koniec
+
+let doUsuniecia = document.getElementById('doUsuniecia');
+doUsuniecia.parentNode.removeChild(doUsuniecia);
