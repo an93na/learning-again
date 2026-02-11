@@ -103,13 +103,15 @@ doUsuniecia.parentNode.removeChild(doUsuniecia);
 
 // pętla w pętli
 
-let tabliczkaMnożenia = "";
-for (let i = 1; i <= 10; i++) {
+let tabliczkaMnożenia = "<table>";
+for (let i = 1; i <= 15; i++) {
+    tabliczkaMnożenia += "<tr>"
 
-    for (let j = 1; j <= 10; j++) {
-        tabliczkaMnożenia += i * j + " ";
+    for (let j = 1; j <= 15; j++) {
+        tabliczkaMnożenia += "<td>"+i * j + "</td>";
     }
-    tabliczkaMnożenia += "<br>"
+    tabliczkaMnożenia += "</tr>"
 }
+tabliczkaMnożenia += "</table>"
 let mnozenie = document.getElementById('mnozenie');
 mnozenie.innerHTML = tabliczkaMnożenia;
