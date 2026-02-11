@@ -100,3 +100,16 @@ body.appendChild(p) //dołącza nowe dziecko na koniec
 
 let doUsuniecia = document.getElementById('doUsuniecia');
 doUsuniecia.parentNode.removeChild(doUsuniecia);
+
+// pętla w pętli
+
+let tabliczkaMnożenia = "";
+for (let i = 1; i <= 10; i++) {
+
+    for (let j = 1; j <= 10; j++) {
+        tabliczkaMnożenia += i * j + " ";
+    }
+    tabliczkaMnożenia += "<br>"
+}
+let mnozenie = document.getElementById('mnozenie');
+mnozenie.innerHTML = tabliczkaMnożenia;
