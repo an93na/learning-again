@@ -25,13 +25,15 @@ test.onmouseover = zmienKolor;
 test.onmouseleave = zmienKolor2;
 
 let fontSize = 10
+test.setAttribute('style', `font-size: ${fontSize}px`)
+
 const powiekszRozmiar = () => {
     fontSize++
-    test.setAttribute('style', `font-size: ${fontSize}px`)
+    test.style.fontSize = fontSize + 'px'
 }
 const zmniejszRozmiar = () => {
     fontSize--
-    test.style.fontSize = fontSize+'px'
+    test.style.fontSize = fontSize + 'px'
 }
 let increase = document.getElementById("+");
 let decrease = document.getElementById("-")
