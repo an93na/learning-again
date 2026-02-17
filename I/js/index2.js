@@ -4,16 +4,17 @@ function wypiszTekst(tekst) {
 
 let wybor = document.getElementById("wybor")
 wybor.onclick = function () {
-    console.log('kliknięto na tekst')
+    alert('kliknieto')
 }
 
 
 function zmienKolor() {
-    this.style.color = "blue"
+    this.className = "zmienKolor"
 }
 function zmienKolor2() {
-    this.style.color = "black"
+    this.className = ""
 }
 let test = document.getElementById("test");
 test.onmouseover = zmienKolor;
 test.onmouseleave = zmienKolor2;
+
