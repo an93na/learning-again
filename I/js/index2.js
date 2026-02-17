@@ -14,16 +14,25 @@ function zmienKolor() {
 function zmienKolor2() {
     this.className = ""
 }
-const powiekszRozmiar = () => {
-    test.className = 'powieksz'
-}
-const zmniejszRozmiar = () => {
-    test.className = 'zmniejsz'
-}
+// const powiekszRozmiar = () => {
+//     test.className = 'powieksz'
+// }
+// const zmniejszRozmiar = () => {
+//     test.className = 'zmniejsz'
+// }
 let test = document.getElementById("test");
 test.onmouseover = zmienKolor;
 test.onmouseleave = zmienKolor2;
 
+let fontSize = 10
+const powiekszRozmiar = () => {
+    fontSize++
+    test.setAttribute('style', `font-size: ${fontSize}px`)
+}
+const zmniejszRozmiar = () => {
+    fontSize--
+    test.style.fontSize = fontSize+'px'
+}
 let increase = document.getElementById("+");
 let decrease = document.getElementById("-")
 
